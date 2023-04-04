@@ -17,15 +17,12 @@ nav{
     padding: 50px;
     border-width: 10px;
     border-style: solid;
-    border-color: black;
+    border-color: black; 
 }  
 h1{
     font-size: 3rem;
     color: black;
-} 
-h1:hover{
-    color: var(--whiteish);
-}
+}  
 nav ul{
     font-size: large;
     margin-top: 15px;
@@ -76,12 +73,68 @@ h2{
     font-size: xx-large; 
     margin: auto; 
 } 
-
 .workGrid{
-    display: flex;
-    justify-content: space-around;
+    display: flex; 
+    flex-direction: column;
     flex-wrap: wrap;  
+    position: relative;
+    border: black;
+    padding: 15px;
+} 
+//used for anchor
+#aboutMe{
+}
+#work{
+}
+#contactMe{ 
 }
 
+#largeImage img{
+    width: 100%; 
+    min-width: 500px;
+    height: 300px;
+    align-items: center;
+}
+
+.align-center {
+    align-items: center;
+  }
+
+.card{
+    background-color: #9fa9a3;
+    padding: 15px;
+    border-radius: 15px;
+} 
+#contactMe ul li{
+    list-style: none;
+    display: inline;
+    margin-left: 150px; 
+    text-decoration: none;  
+
+}
+#contactMe ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    font-weight: 600;
+}
+#contactMe ul li a:hover{
+    color: var(--whiteish);
+}
+
+@media screen and (max-width: 992px) {
+    nav {
+      width: 75%;
+    }
+   
+  }
+
+  @media screen and (max-width: 768px) {
+    nav {
+        width: 100%;
+      }
+     
+  }
+  
 
  
