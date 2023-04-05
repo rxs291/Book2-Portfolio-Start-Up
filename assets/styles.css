@@ -88,23 +88,40 @@ h2{
 }
 #contactMe{ 
 }
+.card{
+    background-color: #9fa9a3; 
+    border-radius: 15px;
+    position: relative;  
+    margin-bottom: 15px; 
+} 
 
-#largeImage img{
-    width: 100%; 
-    min-width: 500px;
-    height: 300px;
-    align-items: center;
+#largeImage h4{
+    position: absolute;
+    background-color: var(--whiteish);
+    top: 15px;
+    font-size: x-large;
+    cursor: pointer;
+    border-radius: 15px;
+    border: solid var(--greenish);
+}
+
+#largeImage{
+    overflow: hidden;
+    width: 400px;
+    height: 500px;
+    border: solid #9fa9a3;
+    border-width: 8px;
+}
+
+#largeImage img{ 
+    border-radius: 15px;  
 }
 
 .align-center {
     align-items: center;
   }
 
-.card{
-    background-color: #9fa9a3;
-    padding: 15px;
-    border-radius: 15px;
-} 
+ 
 #contactMe ul li{
     list-style: none;
     display: inline;
