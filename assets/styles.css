@@ -1,157 +1,196 @@
 :root {
-    --grayish: #9fa9a3;
-    --greenish: #c5d5c5;
-    --tanish: #e3e0cc;
-    --whiteish: #f0f0f0; 
+  --grayish: #9fa9a3;
+  --greenish: #c5d5c5;
+  --tanish: #e3e0cc;
+  --whiteish: #f0f0f0;
 }
 
 /* -------nav bar------------------------ */
-body{
-    background-color: var(--greenish);
+body {
+  background-color: var(--greenish);
 }
 
-nav{
-    display: flex;
-    justify-content: space-between; 
-    background-color: var(--grayish);
-    padding: 50px;
-    border-width: 10px;
-    border-style: solid;
-    border-color: black; 
-}  
-h1{
-    font-size: 3rem;
-    color: black;
-}  
-nav ul{
-    font-size: large;
-    margin-top: 15px;
-    margin-right: 15px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--grayish);
+  padding: 50px;
+  border-width: 10px;
+  border-style: double;
+  border-color: black;
+  border-radius: 15px;
+
+}
+h1 {
+  font-size: 3rem;
+  color: black;
+}
+nav ul {
+  font-size: large;
+  margin-top: 15px;
+  margin-right: 15px;
 }
 nav ul li {
-    list-style: none;
-    display: inline;
-    margin-left: 10px;  
+  list-style: none;
+  display: inline;
+  margin-left: 10px;
 }
-nav ul li a{
-    text-decoration: none; 
-    font-size: x-large;
-    color: black;
-} 
-nav ul li a:hover{
-    color: var(--whiteish) ;
+nav ul li a {
+  text-decoration: none;
+  font-size: x-large;
+  color: black;
 }
-#faceSize{
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
+nav ul li a:hover {
+  color: var(--whiteish);
+}
+#faceSize {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
 }
 
 /* -----------header2------------------------- */
-h2{
-    margin-top: 50px; 
-    margin-bottom: 80px;
-    margin-left: 50px;
-    font-size: 2rem;
-    font-style: italic; 
+h2 {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  margin-left: 50px;
+  font-size: 2rem;
+  font-style: italic;
 }
-/* -----------sectioned ares: about, work, contact me------------------- */ 
-.sectionArea{
-    padding: 80px 0px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; 
+/* -----------sectioned ares: about, work, contact me------------------- */
+.sectionArea {
+  padding: 80px 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
 }
-.rightSideArea{
-    width: 75%;
-    border-left: #9fa9a3;
-    border-width: 10px;
-    border-style: none none none double;
-    padding: 15px;;
-} 
-.leftSideArea{
-    font-size: xx-large; 
-    margin: auto; 
-} 
-.workGrid{
-    display: flex; 
-    flex-direction: column;
-    flex-wrap: wrap;  
-    position: relative;
-    border: black;
-    padding: 15px;
-} 
+.rightSideArea {
+  width: 75%;
+  height: 100%;
+  border-left: #9fa9a3;
+  border-width: 10px;
+  border-style: none none none double;
+  padding: 15px;
+}
+.leftSideArea {
+  font-size: xx-large;
+  margin: auto;
+  height: 100%;
+}
+.workGrid {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex-wrap: wrap;
+  border: black;
+  padding: 15px;
+  height: 100%;
+  width: 100%;
+}
 //used for anchor
-#aboutMe{
+#aboutMe {
 }
-#work{
+#work {
 }
-#contactMe{ 
+#contactMe {
 }
-.card{
-    background-color: #9fa9a3; 
-    border-radius: 15px;
-    position: relative;  
-    margin-bottom: 15px; 
-} 
+.cardLarge {
+  background-color: #9fa9a3;
+  border-radius: 15px;
+  position: relative;
+  margin-bottom: 15px;
+}
 
-#largeImage h4{
+.cardMedium {
+  border-radius: 15px;
+  margin-bottom: 15px;  
+  position: relative;
+}
+
+#largeImage h4 {
+  position: absolute;
+  background-color: var(--whiteish);
+  top: 15px;
+  font-size: x-large;
+  cursor: pointer;
+  border-radius: 15px;
+  border: solid var(--greenish);
+}
+
+#largeImage {
+  overflow: hidden;
+  width: 800px;
+  height: 500px;
+  border: solid #9fa9a3;
+  border-width: 8px;
+}
+
+#largeImage img {
+  border-radius: 15px;
+}
+
+#mediumImage { 
+    height: 300px;
+    border: solid #9fa9a3;
+    border-width: 8px;  
+}
+
+#mediumImage img{
+    max-width:100%;
+    max-height:100%;
+    object-fit: contain;
+}
+
+#mediumImage h4 {
     position: absolute;
-    background-color: var(--whiteish);
-    top: 15px;
+    background-color: var(--whiteish); 
+    bottom: 0; 
+    left: 7px;
+    justify-content: center;
     font-size: x-large;
     cursor: pointer;
     border-radius: 15px;
-    border: solid var(--greenish);
-}
-
-#largeImage{
-    overflow: hidden;
-    width: 800px;
-    height: 500px;
-    border: solid #9fa9a3;
-    border-width: 8px;
-}
-
-#largeImage img{ 
-    border-radius: 15px;  
-}
-
-.align-center {
-    align-items: center;
+    border: solid var(--greenish); 
+     
   }
 
- 
-#contactMe ul li{
-    list-style: none;
-    display: inline;
-    margin-left: 150px; 
-    text-decoration: none;  
+.align-center {
+  align-items: center;
+}
 
+#contactMe ul li {
+  list-style: none;
+  display: inline;
+  margin-left: 150px;
+  text-decoration: none;
 }
-#contactMe ul li a{
-    text-decoration: none;
-    color: black;
-    font-size: x-large;
-    font-weight: 600;
+
+#contactMe ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+  font-weight: 600;
 }
-#contactMe ul li a:hover{
-    color: var(--whiteish);
+#contactMe ul li a:hover {
+  color: var(--whiteish);
+}
+
+.row-2 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 992px) {
-    nav {
-      width: 75%;
-    }
-   
+  nav {
+    width: 75%;
   }
+}
 
-  @media screen and (max-width: 768px) {
-    nav {
-        width: 100%;
-      }
-     
+@media screen and (max-width: 768px) {
+  nav {
+    width: 100%;
   }
-  
-
- 
+}
